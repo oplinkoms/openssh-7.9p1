@@ -1,0 +1,362 @@
+---- /s Matches (364 in 104 files) ----
+Addrmatch.c:#include <sys/socket.h>
+Audit-bsm.c:	     "svc:/system/auditd:default/:properties/preselection/naflags",
+Auth-options.c:#include "openbsd-compat/sys-queue.h"
+Auth-pam.c:#include <sys/stat.h>
+Auth-rhosts.c:#include <sys/stat.h>
+Auth-rhosts.c:	 * no system hosts.equiv/shosts.equiv files exist then return
+Auth.c:#include <sys/stat.h>
+Auth.c:#include <sys/socket.h>
+Auth.c:		    _PATH_BSHELL : pw->pw_shell); /* empty = /bin/sh */
+Auth2-none.c:#include <sys/stat.h>
+Auth2-pubkey.c:#include <sys/stat.h>
+Auth2.c:#include <sys/stat.h>
+Auth2.c:	/* Append method[/submethod] */
+Authfd.c:#include <sys/socket.h>
+Authfile.c:#include <sys/stat.h>
+Canohost.c:#include <sys/socket.h>
+Channels.c:#include <sys/stat.h>
+Channels.c:#include <sys/socket.h>
+Channels.c:#include "openbsd-compat/sys-queue.h"
+Channels.c:/* Close all channel fd/socket. */
+Channels.c:/* Free the channel and close its fd/socket. */
+Channels.h:	int     type;		/* channel type/state */
+Clientloop.c:# include <sys/stat.h>
+Clientloop.c:#include <sys/socket.h>
+Clientloop.c:#include "openbsd-compat/sys-queue.h"
+Clientloop.c:	for (i = 0; i < sizeof(esc_txt)/sizeof(esc_txt[0]); i++) {
+Config.h:/* Define to 1 if you have the <crypto/sha2.h> header file. */
+Config.h:/* Define to 1 if you have the <linux/seccomp.h> header file. */
+Config.h:/* Define to 1 if you have the <sys/select.h> header file. */
+Config.h:/* Define to 1 if you have the <sys/statvfs.h> header file. */
+Config.h:/* Define to 1 if you have the <sys/stat.h> header file. */
+Config.h:/* Define to 1 if you have the <sys/stream.h> header file. */
+Config.h:/* Define to 1 if you have the <sys/stropts.h> header file. */
+Config.h:/* Define to 1 if you have the <sys/strtio.h> header file. */
+Config.h:/* Define to 1 if you have the <sys/sysctl.h> header file. */
+Config.h:/* Force use of sys/syslog.h on Ultrix */
+Config.h:/* Define to 1 if you have the <sys/sysmacros.h> header file. */
+Config.h:#define USER_PATH "/usr/bin:/bin:/usr/sbin:/sbin"
+Egd.rc (contrib\hpux):#!/sbin/sh
+Egd.rc (contrib\hpux):PATH=/usr/sbin:/usr/bin:/sbin
+Sshd.rc (contrib\hpux):#!/sbin/sh
+Sshd.rc (contrib\hpux):PATH=/usr/sbin:/usr/bin:/sbin
+Sshd.rc (contrib\hpux):WHAT_PATH=/opt/openssh/sbin/sshd
+Sshd.rc (contrib\hpux):WHAT_PID=/var/run/sshd.pid
+Sshd.rc (contrib\hpux):WHAT_CONFIG=/etc/rc.config.d/sshd
+Defines.h:# define S_IXUSR			0000100	/* execute/search permission, */
+Defines.h:# define S_IXGRP			0000010	/* execute/search permission, */
+Defines.h:# define S_IXOTH			0000001	/* execute/search permission, */
+Defines.h:# define _PATH_BSHELL "/bin/sh"
+Defines.h:# define _PATH_STDPATH "/usr/bin:/bin:/usr/sbin:/sbin"
+Defines.h:#    define X_UNIX_PATH "/var/spool/sockets/X11/%u"
+Dns.c:#include <sys/socket.h>
+Entropy.c:#include <sys/socket.h>
+Gss-serv.c:#include "openbsd-compat/sys-queue.h"
+Hostfile.c:#include <sys/stat.h>
+Includes.h:#include <sys/socket.h> /* For CMSG_* */
+Includes.h:# include <sys/select.h>
+Includes.h:# include <sys/stat.h> /* For S_* constants and macros */
+Includes.h:# include <sys/sysmacros.h> /* For MIN, MAX, etc */
+Includes.h:#include <sys/strtio.h>	/* for TIOCCBRK on HP-UX */
+Includes.h:#  include <sys/stream.h>	/* reqd for queue_t on Solaris 2.5.1 */
+Includes.h:# include <sys/syslog.h>
+Krl.c:#include <openbsd-compat/sys-tree.h>
+Krl.c:#include <openbsd-compat/sys-queue.h>
+Loginrec.c:#include <sys/stat.h>
+Loginrec.c:#include <sys/socket.h>
+Logintest.c:#include <sys/socket.h>
+Misc.c:#include <sys/socket.h>
+Misc.c:#include <sys/stat.h>
+Misc.c:/* Get/set routing domain */
+Misc.c:		r = snprintf(s, len, "%s/ssh-XXXXXXXXXXXX", tmpdir);
+Misc.c:	r = snprintf(s, len, "/tmp/ssh-XXXXXXXXXXXX");
+Moduli.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/moduli
+Moduli.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Fa /etc/ssh/moduli
+Monitor.c:#include <sys/socket.h>
+Monitor.c:#include "openbsd-compat/sys-tree.h"
+Monitor.c:#include "openbsd-compat/sys-queue.h"
+Monitor.c:	/* XXX don't sent pwent to unpriv; send fake class/dir/shell too */
+Monitor.c:	/* Allow service/style information on the auth context */
+Monitor_fdpass.c:#include <sys/socket.h>
+Monitor_wrap.c:#include "openbsd-compat/sys-queue.h"
+Mux.c:#include <sys/stat.h>
+Mux.c:#include <sys/socket.h>
+Mux.c:#include "openbsd-compat/sys-queue.h"
+Nchan.c:#include <sys/socket.h>
+Nchan.c:#include "openbsd-compat/sys-queue.h"
+Base64.c (openbsd-compat):#include <sys/socket.h>
+Bindresvport.c (openbsd-compat):#include <sys/socket.h>
+Bsd-getline.c (openbsd-compat):/* NETBSD ORIGINAL: external/bsd/file/dist/src/getline.c */
+Bsd-getpeereid.c (openbsd-compat):#include <sys/socket.h>
+Bsd-misc.c (openbsd-compat):# include <sys/select.h>
+Bsd-openpty.c (openbsd-compat):# include <sys/stat.h>
+Bsd-openpty.c (openbsd-compat):# include <sys/stropts.h>
+Bsd-poll.c (openbsd-compat):# include <sys/select.h>
+Bsd-poll.h (openbsd-compat):/* OPENBSD ORIGINAL: sys/sys/poll.h */
+Bsd-statvfs.h (openbsd-compat):#include <sys/statfs.h>
+Daemon.c (openbsd-compat):# include <sys/stat.h>
+Explicit_bzero.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/string/explicit_bzero.c */
+Fmt_scaled.c (openbsd-compat):#define	SCALE_LENGTH (sizeof(units)/sizeof(units[0]))
+Getcwd.c (openbsd-compat):#include <sys/stat.h>
+Getopt_long.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/stdlib/getopt_long.c */
+Glob.c (openbsd-compat):#include <sys/stat.h>
+Glob.h (openbsd-compat):#include <sys/stat.h>
+Inet_ntop.c (openbsd-compat):#include <sys/socket.h>
+Kludge-fd_set.c (openbsd-compat):#   include <sys/socket.h>
+Mktemp.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/stdio/mktemp.c */
+Mktemp.c (openbsd-compat):#include <sys/stat.h>
+Openbsd-compat.h (openbsd-compat):#include <sys/socket.h>
+Openbsd-compat.h (openbsd-compat):#   include <sys/socket.h>  /* Ensure include guard is defined */
+Port-aix.c (openbsd-compat):#include <sys/socket.h>
+Port-aix.c (openbsd-compat):			debug3("AIX/setauthdb set registry '%s'", registry);
+Port-aix.c (openbsd-compat):			debug3("AIX/setauthdb set registry '%s' failed: %s",
+Port-aix.h (openbsd-compat):# include <sys/socket.h>
+Port-linux.c (openbsd-compat):#include <selinux/selinux.h>
+Port-linux.c (openbsd-compat):	{"/proc/self/oom_score_adj", -1000},	/* kernels >= 2.6.36 */
+Port-linux.c (openbsd-compat):	{"/proc/self/oom_adj", -17},		/* kernels <= 2.6.35 */
+Port-net.c (openbsd-compat):#include "openbsd-compat/sys-queue.h"
+Port-net.c (openbsd-compat):#include <sys/socket.h>
+Port-solaris.c (openbsd-compat):#include <sys/stat.h>
+Port-solaris.c (openbsd-compat): * Get/set solaris default project.
+Reallocarray.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/stdlib/reallocarray.c */
+Realpath.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/stdlib/realpath.c */
+Realpath.c (openbsd-compat):#include <sys/stat.h>
+Recallocarray.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/stdlib/recallocarray.c */
+Rresvport.c (openbsd-compat):#include <sys/socket.h>
+Setenv.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/stdlib/setenv.c */
+Sha2.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/hash/sha2.c */
+Sha2.c (openbsd-compat): *   (see http://csrc.nist.gov/cryptval/shs/sha256-384-512.pdf) uses this
+Sha2.h (openbsd-compat):/* OPENBSD ORIGINAL: include/sha2.h */
+Sigact.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libcurses/base/sigaction.c */
+Sigact.h (openbsd-compat): * <bsd/signal.h> is in the Linux 1.2.8 + gcc 2.7.0 configuration,
+Sigact.h (openbsd-compat):# include <bsd/signal.h>
+Strcasestr.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/string/strcasestr.c */
+Strlcat.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/string/strlcat.c */
+Strlcpy.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/string/strlcpy.c */
+Strmode.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/string/strmode.c */
+Strmode.c (openbsd-compat):#include <sys/stat.h>
+Strnlen.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/string/strnlen.c */
+Strptime.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/time/strptime.c */
+Strsep.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/string/strsep.c */
+Strtoll.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/stdlib/strtoll.c */
+Strtonum.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/stdlib/strtonum.c */
+Strtoul.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/stdlib/strtoul.c */
+Strtoull.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/stdlib/strtoull.c */
+Sys-queue.h (openbsd-compat):/* OPENBSD ORIGINAL: sys/sys/queue.h */
+Sys-tree.h (openbsd-compat):/* OPENBSD ORIGINAL: sys/sys/tree.h */
+Timingsafe_bcmp.c (openbsd-compat):/* OPENBSD ORIGINAL: lib/libc/string/timingsafe_bcmp.c */
+Xcrypt.c (openbsd-compat):#  include <sys/security.h>
+Closefromtest.c (openbsd-compat\regress):#include <sys/stat.h>
+Strtonumtest.c (openbsd-compat\regress):/* OPENBSD ORIGINAL: regress/lib/libc/strtonum/strtonumtest.c */
+Openssh.xml:<!DOCTYPE service_bundle SYSTEM '/usr/share/lib/xml/dtd/service_bundle.dtd.1'>
+Openssh.xml:            <service_fmri value='svc:/system/filesystem/local'/>
+Openssh.xml:    </service>
+Openssh.xml:</service_bundle>
+Packet.c:#include "openbsd-compat/sys-queue.h"
+Packet.c:#include <sys/socket.h>
+Packet.h:#include "openbsd-compat/sys-queue.h"
+Pathnames.h:#define SSHDIR				ETCDIR "/ssh"
+Pathnames.h:#define _PATH_SSH_SYSTEM_HOSTFILE	SSHDIR "/ssh_known_hosts"
+Pathnames.h:#define _PATH_SSH_SYSTEM_HOSTFILE2	SSHDIR "/ssh_known_hosts2"
+Pathnames.h:#define _PATH_SERVER_CONFIG_FILE	SSHDIR "/sshd_config"
+Pathnames.h:#define _PATH_HOST_CONFIG_FILE		SSHDIR "/ssh_config"
+Pathnames.h:#define _PATH_HOST_DSA_KEY_FILE		SSHDIR "/ssh_host_dsa_key"
+Pathnames.h:#define _PATH_HOST_ECDSA_KEY_FILE	SSHDIR "/ssh_host_ecdsa_key"
+Pathnames.h:#define _PATH_HOST_ED25519_KEY_FILE	SSHDIR "/ssh_host_ed25519_key"
+Pathnames.h:#define _PATH_HOST_XMSS_KEY_FILE	SSHDIR "/ssh_host_xmss_key"
+Pathnames.h:#define _PATH_HOST_RSA_KEY_FILE		SSHDIR "/ssh_host_rsa_key"
+Pathnames.h:#define _PATH_SSH_PROGRAM		"/usr/bin/ssh"
+Pathnames.h:#define _PATH_SSH_DAEMON_PID_FILE	_PATH_SSH_PIDDIR "/sshd.pid"
+Pathnames.h: * /bin/sh before starting the shell or command if they exist.  They will be
+Pathnames.h:#define _PATH_SSH_SYSTEM_RC		SSHDIR "/sshrc"
+Pathnames.h:#define _PATH_SSH_HOSTS_EQUIV		SSHDIR "/shosts.equiv"
+Pathnames.h:#define _PATH_SSH_ASKPASS_DEFAULT	"/usr/X11R6/bin/ssh-askpass"
+Pathnames.h:#define _PATH_SSH_KEY_SIGN		"/usr/libexec/ssh-keysign"
+Pathnames.h:#define _PATH_SSH_PKCS11_HELPER		"/usr/libexec/ssh-pkcs11-helper"
+Pathnames.h:#define _PATH_SFTP_SERVER		"/usr/libexec/sftp-server"
+Pathnames.h:#define ASKPASS_PROGRAM         "/usr/lib/ssh/ssh-askpass"
+Progressmeter.c:	strlcat(buf, "/s ", win_size);
+Readconf.c:#include <sys/stat.h>
+Readconf.c:#include <sys/socket.h>
+Readconf.c:			 * /etc/ssh for system ones.
+Readconf.h:	u_int	num_system_hostfiles;	/* Paths for /etc/ssh/ssh_known_hosts */
+Check-perm.c (regress):#include <sys/stat.h>
+Netcat.c (regress):#include <sys/socket.h>
+Netcat.c (regress):/* *** src/usr.bin/nc/socks.c *** */
+Netcat.c (regress):#include <sys/socket.h>
+Setuid-allowed.c (regress):# include <sys/statvfs.h>
+Makefile.inc (regress\unittests):SSHREL=../../../../../usr.bin/ssh
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Test_iterate.c (regress\unittests\hostkeys):	ctx.nexpected = sizeof(expected_full)/sizeof(*expected_full);
+Common.c (regress\unittests\sshkey):#include <sys/stat.h>
+Test_file.c (regress\unittests\sshkey):#include <sys/stat.h>
+Test_fuzz.c (regress\unittests\sshkey):#include <sys/stat.h>
+Test_sshkey.c (regress\unittests\sshkey):	for (i = 0; i < (sizeof(lens)/sizeof(lens[0])); i++) {
+Sandbox-pledge.c:#include <sys/syscall.h>
+Sandbox-pledge.c:#include <sys/socket.h>
+Sandbox-seccomp-filter.c:# include <asm/siginfo.h>
+Sandbox-seccomp-filter.c:#include <linux/seccomp.h>
+Sandbox-seccomp-filter.c:	.len = (unsigned short)(sizeof(preauth_insns)/sizeof(preauth_insns[0])),
+Sandbox-systrace.c:#include <sys/syscall.h>
+Sandbox-systrace.c:#include <sys/socket.h>
+Sandbox-systrace.c:#include <dev/systrace.h>
+Sandbox-systrace.c:	if ((dev_systrace = open("/dev/systrace", O_RDONLY)) == -1)
+Sandbox-systrace.c:		fatal("%s: open(\"/dev/systrace\"): %s", __func__,
+Sc25519.c: * Copied from supercop-20130419/crypto_sign/ed25519/ref/sc25519.c
+Sc25519.h: * Copied from supercop-20130419/crypto_sign/ed25519/ref/sc25519.h
+Scp.1.out (\\172.16.161.97\liyi\openssh-7.9p1):Limits the used bandwidth, specified in Kbit/s.
+Scp.c:# include <sys/stat.h>
+Scp.c:		/* Cannot pledge: -p allows setuid/setgid files... */
+Servconf.c:#include <sys/socket.h>
+Servconf.c:#include <sys/sysctl.h>
+Servconf.c:#include "openbsd-compat/sys-queue.h"
+Servconf.c:	 * AuthorizedKeysFile	/etc/ssh_keys/%u
+Serverloop.c:#include <sys/socket.h>
+Serverloop.c:#include "openbsd-compat/sys-queue.h"
+Session.c:# include <sys/stat.h>
+Session.c:#include <sys/socket.h>
+Session.c:#include "openbsd-compat/sys-queue.h"
+Session.c:#include <selinux/selinux.h>
+Session.c:	auth_sock_dir = xstrdup("/tmp/ssh-XXXXXXXXXX");
+Session.c:	auth_info_file = xstrdup("/tmp/sshauth.XXXXXXXXXXXXXXX");
+Session.c:		/* Redirect stdin/stdout/stderr from the pseudo tty. */
+Session.c:		if (shell[0] == '\0')	/* empty shell means /bin/sh */
+Session.c: * Run $HOME/.ssh/rc, /etc/ssh/sshrc, or xauth (whichever is found
+Session.c:	 * legal, and means /bin/sh.
+Session.c:	 * /etc/ssh/sshrc and xauth are run in the proper environment.
+Sftp-client.c:#include <sys/statvfs.h>
+Sftp-client.c:#include "openbsd-compat/sys-queue.h"
+Sftp-client.c:# include <sys/stat.h>
+Sftp-common.c:#include <sys/stat.h>
+Sftp-glob.c:# include <sys/stat.h>
+Sftp-server.c:#include <sys/stat.h>
+Sftp-server.c:#include <sys/statvfs.h>
+Sftp-server.c:	 * On platforms where we can, avoid making /proc/self/{mem,maps}
+Sftp.1.out (\\172.16.161.97\liyi\openssh-7.9p1):Limits the used bandwidth, specified in Kbit/s.
+Sftp.c:# include <sys/stat.h>
+Sftp.c:#include <sys/socket.h>
+Sftp.c:#include <sys/statvfs.h>
+Ssh-add.c:#include <sys/stat.h>
+Ssh-agent.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa $TMPDIR/ssh-XXXXXXXXXX/agent.\*(Ltppid\*(Gt .
+Ssh-agent.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa $TMPDIR/ssh-XXXXXXXXXX/agent.<ppid>
+Ssh-agent.c:#include <sys/stat.h>
+Ssh-agent.c:#include <sys/socket.h>
+Ssh-agent.c:#include "openbsd-compat/sys-queue.h"
+Ssh-keygen.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/moduli .
+Ssh-keygen.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/moduli
+Ssh-keygen.c:#include <sys/socket.h>
+Ssh-keygen.c:#include <sys/stat.h>
+Ssh-keygen.c:	/* Moduli generation/screening */
+Ssh-keygen.c:		/* Moduli generation/screening */
+Ssh-keyscan.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_known_hosts
+Ssh-keyscan.c:#include "openbsd-compat/sys-queue.h"
+Ssh-keysign.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_config
+Ssh-keysign.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_config
+Ssh-keysign.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_dsa_key
+Ssh-keysign.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_ecdsa_key
+Ssh-keysign.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_ed25519_key
+Ssh-keysign.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_rsa_key
+Ssh-keysign.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_dsa_key-cert.pub
+Ssh-keysign.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_ecdsa_key-cert.pub
+Ssh-keysign.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_ed25519_key-cert.pub
+Ssh-keysign.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_rsa_key-cert.pub
+Ssh-pkcs11-client.c:#include <sys/socket.h>
+Ssh-pkcs11-helper.c:#include "openbsd-compat/sys-queue.h"
+Ssh-pkcs11.c:#include "openbsd-compat/sys-queue.h"
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pq Pa /etc/ssh/ssh_config
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/shosts.equiv
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_known_hosts
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_known_hosts
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.Dl $ ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/shosts.equiv
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_config
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_key
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_dsa_key
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_ecdsa_key
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_ed25519_key
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_rsa_key
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_known_hosts
+Ssh.1.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/sshrc
+Ssh.c:# include <sys/stat.h>
+Ssh.c:#include <sys/socket.h>
+Ssh.c:#include "openbsd-compat/sys-queue.h"
+Sshbuf-misc.c:#include <sys/socket.h>
+Sshconnect.c:#include <sys/stat.h>
+Sshconnect.c:#include <sys/socket.h>
+Sshconnect.c:		 * by that sentence, and ask the user if he/she wishes to
+Sshconnect2.c:#include <sys/socket.h>
+Sshconnect2.c:#include <sys/stat.h>
+Sshconnect2.c:#include "openbsd-compat/sys-queue.h"
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /usr/sbin/sshd .
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/sshd_config .
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_host_ecdsa_key ,
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_host_ed25519_key
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_host_rsa_key .
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/sshrc
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/sshrc
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_known_hosts
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_host_rsa_key.pub .
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_host_rsa_key.pub
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/moduli
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/shosts.equiv
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_ecdsa_key
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_ed25519_key
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_rsa_key
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_ecdsa_key.pub
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_ed25519_key.pub
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_host_rsa_key.pub
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_known_hosts
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/sshd_config
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/sshrc
+Sshd.8.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /var/run/sshd.pid
+Sshd.c:#include <sys/socket.h>
+Sshd.c:# include <sys/stat.h>
+Sshd.c:#include "openbsd-compat/sys-tree.h"
+Sshd.c:#include "openbsd-compat/sys-queue.h"
+Sshd.c:#include <sys/security.h>
+Sshd_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/sshd_config
+Sshd_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_host_ecdsa_key ,
+Sshd_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_host_ed25519_key
+Sshd_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_host_rsa_key .
+Sshd_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/shosts.equiv
+Sshd_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/known_hosts .
+Sshd_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /var/run/sshd.pid .
+Sshd_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/sshd_config
+Sshd_config.out (\\172.16.161.97\liyi\openssh-7.9p1):# This sshd was compiled with PATH=/usr/bin:/bin:/usr/sbin:/sbin
+Sshd_config.out (\\172.16.161.97\liyi\openssh-7.9p1):#HostKey /etc/ssh/ssh_host_key
+Sshd_config.out (\\172.16.161.97\liyi\openssh-7.9p1):#HostKey /etc/ssh/ssh_host_rsa_key
+Sshd_config.out (\\172.16.161.97\liyi\openssh-7.9p1):#HostKey /etc/ssh/ssh_host_dsa_key
+Sshd_config.out (\\172.16.161.97\liyi\openssh-7.9p1):#HostKey /etc/ssh/ssh_host_ecdsa_key
+Sshd_config.out (\\172.16.161.97\liyi\openssh-7.9p1):#HostKey /etc/ssh/ssh_host_ed25519_key
+Sshd_config.out (\\172.16.161.97\liyi\openssh-7.9p1):# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
+Sshd_config.out (\\172.16.161.97\liyi\openssh-7.9p1):#PidFile /var/run/sshd.pid
+Sshd_config.out (\\172.16.161.97\liyi\openssh-7.9p1):Subsystem	sftp	/usr/lib64/openssh/sftp-server
+Sshlogin.c:#include <sys/socket.h>
+Sshpty.c:#include <sys/stat.h>
+Ssh_api.h:#include "openbsd-compat/sys-queue.h"
+Ssh_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pq Pa /etc/ssh/ssh_config
+Ssh_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_config
+Ssh_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_known_hosts ,
+Ssh_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_known_hosts2 .
+Ssh_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh
+Ssh_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.Pa /etc/ssh/ssh_known_hosts
+Ssh_config.5.out (\\172.16.161.97\liyi\openssh-7.9p1):.It Pa /etc/ssh/ssh_config
+Umac.c:/* #define RUN_TESTS           0  Run basic correctness/speed tests       */
+Xmss_hash.c:#include <openssl/sha.h>
