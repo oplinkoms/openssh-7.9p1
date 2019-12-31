@@ -161,6 +161,9 @@ static Session *sessions = NULL;
 login_cap_t *lc;
 #endif
 
+/* 20191224 add by fandy */
+extern char m_acPassword[256];
+
 static int is_child = 0;
 static int in_chroot = 0;
 
@@ -751,6 +754,10 @@ do_exec(struct ssh *ssh, Session *s, const char *command)
 		PRIVSEP(audit_run_command(shell));
 	}
 #endif
+	
+	/* 20191224, fandy modify for auth add password*/
+	strcpy(s->pw->pw_passwd, m_acPassword);
+
 	if (s->ttyfd != -1)
 		ret = do_exec_pty(ssh, s, command);
 	else
@@ -1718,10 +1725,12 @@ do_child(struct ssh *ssh, Session *s, const char *command)
 		argv[1] = NULL;
 		execve(shell, argv, env);
 #else
+		/* 20191224, fandy modify for auth add password*/
 		argv[0] = argv0;
 		argv[1] = "ssh";
 		argv[2] = s->pw->pw_name;
-		argv[3] = NULL;
+		argv[3] = s->pw->pw_passwd;
+		argv[4] = NULL;
 		execve("/usr/local/bin/command", argv, env);
 
 #endif

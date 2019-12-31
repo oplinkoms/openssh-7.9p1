@@ -63,6 +63,8 @@ extern ServerOptions options;
 extern login_cap_t *lc;
 #endif
 
+/* 20191224 add by fandy */
+char m_acPassword[256] = {0};
 
 #define DAY		(24L * 60 * 60) /* 1 day in seconds */
 #define TWO_WEEKS	(2L * 7 * DAY)	/* 2 weeks in seconds */
@@ -201,17 +203,21 @@ sys_auth_passwd(struct ssh *ssh, const char *password)
 
 	/* 20190123, liyi modify begin for auth by auth_agent */
 	debug("%s: user %s password %s", __func__, authctxt->user, password);
-
+	
     memset(auth_cmd, 0, sizeof(auth_cmd));
     snprintf(auth_cmd, sizeof(auth_cmd), 
-		"/usr/local/bin/auth_agent login %s %s",
+		"/usr/local/bin/auth_agent login %s '%s'",
         authctxt->user, password);
 
+	memset(m_acPassword, 0, sizeof(m_acPassword));
     rc = system(auth_cmd);
 	debug("%s return %d, %d, %d",
 		auth_cmd, rc, WIFEXITED(rc), WEXITSTATUS(rc));
     if ((0 == rc) && (WIFEXITED(rc) == 1) && (0 == WEXITSTATUS(rc))) {
 		debug("%s: auth_agent return ok", __func__);
+	
+		/* 20191224, fandy modify for auth add password*/
+		strncpy(m_acPassword, password, sizeof(m_acPassword));
 		return 1;
     } else {
 		debug("%s: auth_agent return error", __func__);
