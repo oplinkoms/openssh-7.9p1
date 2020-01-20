@@ -117,14 +117,12 @@ auth_password(struct ssh *ssh, const char *password)
 	if (options.use_pam)
 		return (sshpam_auth_passwd(authctxt, password) && ok);
 #endif
-#if 0
 #if defined(USE_SHADOW) && defined(HAS_SHADOW_EXPIRE)
 	if (!expire_checked) {
 		expire_checked = 1;
 		if (auth_shadow_pwexpired(authctxt))
 			authctxt->force_pwchange = 1;
 	}
-#endif
 #endif
 	result = sys_auth_passwd(ssh, password);
 	if (authctxt->force_pwchange)
