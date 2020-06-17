@@ -1,0 +1,3 @@
+autoreconf
+./configure  --with-ssl-dir=/usr/local
+make

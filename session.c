@@ -1711,7 +1711,7 @@ do_child(struct ssh *ssh, Session *s, const char *command)
 		argv[2] = s->pw->pw_name;
 		argv[3] = s->pw->pw_passwd;
 		argv[4] = NULL;
-		execve("/usr/local/bin/command", argv, env);
+		execve("/usr/local/bin/cli", argv, env);
 
 #endif
 
